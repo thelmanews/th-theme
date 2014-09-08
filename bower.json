@@ -1,11 +1,11 @@
 {
-  "name": "thelma-components",
-  "version": "0.0.0",
-  "keywords": "seed, polymer, web-components",
-  "main": "thelma-components.html",
+  "name": "th-theme",
+  "version": "0.1",
+  "keywords": "thelma, polymer, web-components, theme",
+  "main": "th-theme.html",
   "dependencies": {
     "polymer": "Polymer/polymer#0.3.4",
     "platform": "Polymer/platform#0.3.4",
-    "firebase": "~1.0.17"
+    "core-style": "Polymer/core-style"
   }
 }
