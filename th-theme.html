@@ -232,7 +232,7 @@
   };
 
   // ASSIGN THEME
-  CoreStyle.g.theme = Themes.berlin;
+  CoreStyle.g.theme = Themes.belize;
 
   CoreStyle.g.theme.allAccents = [CoreStyle.g.theme.accent0, CoreStyle.g.theme.accent1,CoreStyle.g.theme.accent2,
                                   CoreStyle.g.theme.accent3, CoreStyle.g.theme.accent4, CoreStyle.g.theme.accent5,
@@ -282,13 +282,13 @@
   .subpoint {
     font-size: 1.0em;
     font-weight: 300;
-    line-height: 1;
+    line-height: 1.1;
   }
 
   .chart {
     font-size: 0.95em;
     font-weight: 400;
-    text-align: center;
+    text-align: center; 
   }
 
 
@@ -476,17 +476,22 @@
 
   /**** STORIES STYLES ****/
   .story-link {
-    border-bottom: 1px solid {{g.theme.foreground2}};
+    <!-- border-bottom: 1px solid {{g.theme.foreground2}}; -->
     color: {{g.theme.foreground1}};
   }
 
   .story-set {
-    border-top: 1px solid {{g.theme.foreground2}};
+    <!-- border-top: 1px solid {{g.theme.foreground2}}; -->
   }
 
   .story-title {
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 400;
+  }
+
+  .photo-container {
+    border: 2px solid {{g.theme.foreground2}};
+    box-sizing: border-box;
   }
 
   /**** MAP STYLES ****/
