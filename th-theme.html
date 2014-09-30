@@ -213,7 +213,8 @@
     accent5:'#cc0b24',  
     accent6:'#880650',  
     font: "'Chronicle Display', serif",
-    mapColors: ['rgb(239,243,255)','rgb(198,219,239)','rgb(158,202,225)','rgb(107,174,214)','rgb(66,146,198)','rgb(33,113,181)','rgb(8,69,148)']
+    mapColors: ['rgb(239,243,255)','rgb(198,219,239)','rgb(158,202,225)','rgb(107,174,214)','rgb(66,146,198)','rgb(33,113,181)','rgb(8,69,148)'],
+    logo: "url('/bower_components/thelma-components/images/wsjdark60.jpg')"
   };
 
   Themes.wsjDark =  {
@@ -228,7 +229,8 @@
     accent5:'#cc0b24',  
     accent6:'#880650',    
     font: "'Chronicle Display', serif",
-    mapColors: ['rgb(239,243,255)','rgb(198,219,239)','rgb(158,202,225)','rgb(107,174,214)','rgb(66,146,198)','rgb(33,113,181)','rgb(8,69,148)']
+    mapColors: ['rgb(239,243,255)','rgb(198,219,239)','rgb(158,202,225)','rgb(107,174,214)','rgb(66,146,198)','rgb(33,113,181)','rgb(8,69,148)'],
+    logo: "url('/bower_components/thelma-components/images/wsj60.jpg')"
   };
 
   // ASSIGN THEME
@@ -505,7 +507,12 @@
     fill: {{g.theme.foreground2}};
     stroke-width: 2px;
   }
-}
+
+
+  /**** BY-LINE ****/
+  .wsj {
+    background: {{g.theme.logo || "url('/bower_components/thelma-components/images/wsj60.jpg')"}};
+  }
  
 }
 
