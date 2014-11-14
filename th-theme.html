@@ -1,8 +1,9 @@
 <link rel="import" href="../core-style/core-style.html">
 <script>
   
-  // THEMES
   var Themes = {};
+
+  // THEMES -- start --
 
   Themes.belize =  {
     foreground1: '#FFFFFF',
@@ -35,6 +36,7 @@
   };
 
   Themes.baja =  {
+    exclude: true,
     foreground1: '#FFFFFF',
     foreground2: '#FFFFFF',
     background: '#F7931C',
@@ -92,6 +94,7 @@
   };
 
   Themes.madrid =  {
+    exclude: true,
     foreground1: '#FFFFFF',
     foreground2: '#FFFFFF',
     background: '#301633',
@@ -134,6 +137,7 @@
   };
 
   Themes.oslo =  {
+    exclude: true,
     foreground1: '#FFFFFF',
     foreground2: '#FFFFFF',
     background: '#505559',
@@ -148,6 +152,7 @@
   };
 
   Themes.salvador =  {
+    exclude: true,
     foreground1: '#FFFFFF',
     foreground2: '#FFFFFF',
     background: '#6D134B',
@@ -190,6 +195,7 @@
   };
 
   Themes.newark =  {
+    exclude: true,
     foreground1: '#FFFFFF',
     foreground2: '#FFFFFF',
     background: '#202326',
@@ -233,14 +239,10 @@
     logo: "url('/bower_components/thelma-components/images/wsj60.jpg')"
   };
 
+  // THEMES -- end --
+
   // ASSIGN THEME
   CoreStyle.g.theme = Themes.dublin;
-
-  // NOT NEEDED? Comment out for now to test
-  // CoreStyle.g.theme.allAccents = [CoreStyle.g.theme.accent0, CoreStyle.g.theme.accent1,CoreStyle.g.theme.accent2,
-  //                                 CoreStyle.g.theme.accent3, CoreStyle.g.theme.accent4, CoreStyle.g.theme.accent5,
-  //                                 CoreStyle.g.theme.accent6];
-
 
 </script>
 
