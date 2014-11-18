@@ -240,10 +240,38 @@
     logo: "url('/bower_components/thelma-components/images/wsj60.jpg')"
   };
 
+  Themes.marketWatchLight =  {
+    foreground1: '#34393D',
+    foreground2: '#FFFFFF',
+    background: '#EDEDED',
+    accent0: '#15526C',
+    accent1: '#245E5F',  
+    accent2:'#71BC69',
+    accent3: '#37AEC0',  
+    accent4:'#99D7EF',  
+    font: "'Chronicle Display', serif",
+    mapColors: ['rgb(239,243,255)','rgb(198,219,239)','rgb(158,202,225)','rgb(107,174,214)','rgb(66,146,198)','rgb(33,113,181)','rgb(8,69,148)'],
+    logo: "url('/bower_components/thelma-components/images/marketWatch.jpg')"
+  };
+
+  Themes.marketWatchDark =  {
+    foreground1: '#FFFFFF',
+    foreground2: '#FFFFFF',
+    background: '#183A3E',
+    accent0: '#8ADEFF',
+    accent1: '#245E5F',  
+    accent2:'#71BC69',
+    accent3: '#37AEC0',  
+    accent4:'#69BAE6',  
+    font: "'Chronicle Display', serif",
+    mapColors: ['rgb(239,243,255)','rgb(198,219,239)','rgb(158,202,225)','rgb(107,174,214)','rgb(66,146,198)','rgb(33,113,181)','rgb(8,69,148)'],
+    logo: "url('/bower_components/thelma-components/images/marketWatch.jpg')"
+  };
+
   // THEMES -- end --
 
   // ASSIGN THEME
-  CoreStyle.g.theme = Themes.dublin;
+  CoreStyle.g.theme = Themes.marketWatchLight;
 
 </script>
 
@@ -515,6 +543,10 @@
   /**** BY-LINE ****/
   .wsj {
     background: {{g.theme.logo || "url('/bower_components/thelma-components/images/wsj60.jpg')"}};
+  }
+  
+  .marketwatch {
+    background: {{g.theme.logo || "url('/bower_components/thelma-components/images/marketwatch.jpg')"}};
   }
  
 }
