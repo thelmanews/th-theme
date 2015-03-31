@@ -3,7 +3,7 @@
   
   var Themes = {};
 
-  // THEMES -- start --
+  // ALL THEMES ---- start ----
 
   Themes.belize =  {
     permittedEnvs: ['!wsj'], // all environments except WSJ
@@ -229,7 +229,7 @@
     mapColors: ['rgb(255,255,204)','rgb(199,233,180)','rgb(127,205,187)','rgb(65,182,196)','rgb(29,145,192)','rgb(34,94,168)','rgb(12,44,132)']  
   };
 
-  // WSJ Themes
+  // WSJ Themes -- start --
 
   Themes.curacao = {
     permittedEnvs: ['wsj'], // WSJ only
@@ -329,6 +329,8 @@
     mapColors: ['rgb(237,248,233)','rgb(199,233,192)','rgb(161,217,155)','rgb(116,196,118)','rgb(65,171,93)','rgb(35,139,69)','rgb(0,90,50)']
   }
 
+  // WSJ Themes -- end --
+
   Themes.lenses =  {
     permittedEnvs: [], // no environments (just lenses)
     foreground1: '#2B2B2B',
@@ -367,7 +369,7 @@
     mapColors: ['rgb(239,243,255)','rgb(198,219,239)','rgb(158,202,225)','rgb(107,174,214)','rgb(66,146,198)','rgb(33,113,181)','rgb(8,69,148)']
   };
 
-  // RETIRED THEMES 
+  // Retired themes -- start --
   Themes.newark =  {
   	exclude: true,
     permittedEnvs: [], // no environments
@@ -499,8 +501,9 @@
     mapColors: ['rgb(241,238,246)','rgb(212,185,218)','rgb(201,148,199)','rgb(223,101,176)','rgb(231,41,138)','rgb(206,18,86)','rgb(145,0,63)']
   };
 
+  // Retired themes -- end --
 
-  // THEMES -- end --
+  // ALL THEMES ---- end ----
 
   // ASSIGN THEME
   CoreStyle.g.theme = Themes.lenses;
