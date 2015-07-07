@@ -879,19 +879,21 @@
     line-height: 1.2;
   }
 
-  .serif {
+  .serif, .th-serif {
     font-family: {{g.theme.serifFont}};
   }
 
-  .sans-serif {
+  .sans-serif, .th-sans-serif {
     font-family: {{g.theme.sansSerifFont}};
   }
   
-  :host(.serif), :host(.serif) /deep/ *  { /* applies everything inside of the component with this class */
+  /* applies to everything inside of the component with this class */
+  :host(.serif), :host(.th-serif), :host(.serif) /deep/ *, :host(.th-serif) /deep/ *  { 
     font-family: {{g.theme.serifFont}};
   }
 
-  :host(.sans-serif), :host(.sans-serif) /deep/ *  { /* applies everything inside of the component with this class */
+  /* applies to everything inside of the component with this class */
+  :host(.sans-serif), :host(.th-sans-serif), :host(.sans-serif) /deep/ *, :host(.th-sans-serif) /deep/ *  { 
     font-family: {{g.theme.sansSerifFont}};
   }
 
@@ -905,6 +907,7 @@
     font-size: 0.95em;
     font-weight: 400;
     text-align: center; 
+    line-height: 1.3;
   }
 
 
